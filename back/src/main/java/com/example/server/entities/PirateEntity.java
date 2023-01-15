@@ -9,8 +9,7 @@ import javax.persistence.*;
 @Table(name = "pirate", schema = "public")
 public class PirateEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "pirate_id_seq")
-    @Column(name = "id", columnDefinition = "serial primary key")
+    @Column(name = "id", columnDefinition = "primary key")
     private Long id;
 
     @Column(name = "person_id", columnDefinition = "REAL")

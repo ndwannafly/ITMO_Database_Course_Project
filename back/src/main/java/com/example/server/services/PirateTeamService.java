@@ -1,5 +1,6 @@
 package com.example.server.services;
 
+import com.example.server.entities.PeopleEntity;
 import com.example.server.entities.PirateTeamEntity;
 import com.example.server.repositories.PirateRepository;
 import com.example.server.repositories.PirateTeamRepository;
@@ -13,6 +14,11 @@ public class PirateTeamService {
 
     public PirateTeamEntity getPirateTeamEntityByPirateId(Long pirateId){
         return pirateTeamRepository.getPirateTeamEntityByPirateId(pirateId);
+    }
+
+    public PirateTeamEntity addPirate (PirateTeamEntity pirateTeamEntity) {
+
+        return pirateTeamRepository.save(pirateTeamEntity);
     }
 
 }

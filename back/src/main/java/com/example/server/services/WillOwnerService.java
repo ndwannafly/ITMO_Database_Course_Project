@@ -1,5 +1,6 @@
 package com.example.server.services;
 
+import com.example.server.entities.WeaponOwnerEntity;
 import com.example.server.entities.WillOwnerEntity;
 import com.example.server.repositories.WillOwnerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,4 +14,10 @@ public class WillOwnerService {
     public List<WillOwnerEntity> getWillOwnerEntitiesByPersonId(Long personId){
         return willOwnerRepository.getWillOwnerEntitiesByPersonId(personId);
     }
+
+    public WillOwnerEntity addWillOwner (WillOwnerEntity willOwnerEntity) {
+
+        return willOwnerRepository.save(willOwnerEntity);
+    }
+
 }

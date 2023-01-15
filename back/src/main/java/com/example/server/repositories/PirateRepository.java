@@ -16,4 +16,6 @@ public interface PirateRepository extends JpaRepository<PirateEntity, Long> {
     List<Long> getPirateIdById(Long id);
 
     PirateEntity getPirateEntityById( Long id);
+
+    PirateEntity findTopByOrderByIdDesc();
 }

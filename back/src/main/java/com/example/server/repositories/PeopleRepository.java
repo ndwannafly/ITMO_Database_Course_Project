@@ -16,5 +16,6 @@ public interface PeopleRepository extends JpaRepository<PeopleEntity, Long> {
     @Query
     PeopleEntity getPeopleEntityById(Long id);
 
+    PeopleEntity findTopByOrderByIdDesc();
 
 }

@@ -5,6 +5,7 @@ import com.example.server.repositories.PeopleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Service
@@ -15,4 +16,13 @@ public class PeopleService {
     public List<PeopleEntity> getPeople(){return peopleRepository.getAll();}
 
     public PeopleEntity getPeoplesById(Long id){return peopleRepository.getPeopleEntityById(id);}
+
+    public Long getLastPeopleId(){
+        return peopleRepository.findTopByOrderByIdDesc().getId();
+    }
+
+    public PeopleEntity addPeople (PeopleEntity peopleEntity) {
+
+        return peopleRepository.save(peopleEntity);
+    }
 }
