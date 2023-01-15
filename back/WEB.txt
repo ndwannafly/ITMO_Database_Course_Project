@@ -1,0 +1,35 @@
+ssh -L 5432:localhost:5432 s311834@helios.cs.ifmo.ru -p 2222
+cd wildfly-for-helios/bin
+./standalone.sh & exit
+
+
+uzm839
+
+
+1123
+
+O0
+uOVQ=2317
+
+список людей которые были в одной вселенной, но попали в разных ловушках
+
+SELECT ID_Human FROM teleportation GROUP BY ID_Human HAVING count()
+
+
+SELECT ID_Human FROM teleportation 
+WHERE ID_Universe IN
+	(SELECT ID_Universe FROM teleportation GROUP BY HAVING COUNT(id_universe) > 1) AND id_trap IN (SELECT id_trap FROM teleportation GROUP BY HAVING count(distinct id_trap) > 1 );
+
+
+SELECT ID_Human FROM teleportation 
+WHERE ID_universe IN (SELECT id_universe FROM teleportation GROUP BY id_universe HAVING count(distinct id_trap) > 1 );
+
+SELECT human.name FROM human 
+JOIN teleportation ON human.id=teleportation.id_human
+WHERE teleportation.ID_universe IN (SELECT teleportation.id_universe FROM teleportation GROUP BY teleportation.id_universe HAVING count(distinct teleportation.id_trap) > 1 );
+
+
+EXPLAIN ANALYZE( SELECT "Н_ТИПЫ_ВЕДОМОСТЕЙ"."НАИМЕНОВАНИЕ", "Н_ВЕДОМОСТИ"."ДАТА"
+FROM "Н_ВЕДОМОСТИ"
+LEFT JOIN "Н_ТИПЫ_ВЕДОМОСТЕЙ" ON "Н_ТИПЫ_ВЕДОМОСТЕЙ"."ИД" = "Н_ВЕДОМОСТИ"."ТВ_ИД"
+WHERE "Н_ТИПЫ_ВЕДОМОСТЕЙ"."ИД" > 1 and "Н_ВЕДОМОСТИ"."ДАТА" < '2010-06-18');

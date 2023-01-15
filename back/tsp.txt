@@ -1,0 +1,569 @@
+[?1049h[22;0;0t[1;49r(B[m[4l[?7h[?1h=[39;49m[?25l[39;49m(B[m[H[2JTotal DISK READ:[1;26H0.00 B/s | Total DISK WRITE:[1;63H0.00 B/s
+
+Current DISK READ:[26G0.00 B/s | Current DISK WRITE:     136.38 M/s
+
+(B[0;7m    TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN(B[0;1;7m     IO>(B[0;7m    COMMAND                                                                                                                                   [4;7H(B[m1 be/4 root[4;26H0.00 B/s    0.00 B/s  ?unavailable?  init splash
+[7G2 be/4 root[5;26H0.00 B/s    0.00 B/s  ?unavailable?  [kthreadd]
+[7G3 be/0 root[6;26H0.00 B/s    0.00 B/s  ?unavailable?  [rcu_gp]
+[7G4 be/0 root[7;26H0.00 B/s    0.00 B/s  ?unavailable?  [rcu_par_gp]
+[7G5 be/0 root[8;26H0.00 B/s    0.00 B/s  ?unavailable?  [netns]
+[7G7 be/0 root[9;26H0.00 B/s    0.00 B/s  ?unavailable?  [kworker/0:0H-events_highpri]
+[7G9 be/0 root[10;26H0.00 B/s    0.00 B/s  ?unavailable?  [kworker/0:1H-kblockd]
+[6G10 be/0 root[11;26H0.00 B/s    0.00 B/s  ?unavailable?  [mm_percpu_wq]
+[6G11 be/4 root[12;26H0.00 B/s    0.00 B/s  ?unavailable?  [rcu_tasks_rude_]
+[6G12 be/4 root[13;26H0.00 B/s    0.00 B/s  ?unavailable?  [rcu_tasks_trace]
+[6G13 be/4 root[14;26H0.00 B/s    0.00 B/s  ?unavailable?  [ksoftirqd/0]
+[6G14 be/4 root[15;26H0.00 B/s    0.00 B/s  ?unavailable?  [rcu_sched]
+[6G15 rt/4 root[16;26H0.00 B/s    0.00 B/s  ?unavailable?  [migration/0]
+[6G16 rt/4 root[17;26H0.00 B/s    0.00 B/s  ?unavailable?  [idle_inject/0]
+[6G18 be/4 root[18;26H0.00 B/s    0.00 B/s  ?unavailable?  [cpuhp/0]
+[6G19 be/4 root[19;26H0.00 B/s    0.00 B/s  ?unavailable?  [kdevtmpfs]
+[6G20 be/0 root[20;26H0.00 B/s    0.00 B/s  ?unavailable?  [inet_frag_wq]
+[6G21 be/4 root[21;26H0.00 B/s    0.00 B/s  ?unavailable?  [kauditd]
+[6G22 be/4 root[22;26H0.00 B/s    0.00 B/s  ?unavailable?  [khungtaskd]
+[6G23 be/4 root[23;26H0.00 B/s    0.00 B/s  ?unavailable?  [oom_reaper]
+[6G24 be/0 root[24;26H0.00 B/s    0.00 B/s  ?unavailable?  [writeback]
+[6G25 be/4 root[25;26H0.00 B/s    0.00 B/s  ?unavailable?  [kcompactd0]
+[6G26 be/5 root[26;26H0.00 B/s    0.00 B/s  ?unavailable?  [ksmd]
+[6G27 be/7 root[27;26H0.00 B/s    0.00 B/s  ?unavailable?  [khugepaged]
+[6G73 be/0 root[28;26H0.00 B/s    0.00 B/s  ?unavailable?  [kintegrityd]
+[6G74 be/0 root[29;26H0.00 B/s    0.00 B/s  ?unavailable?  [kblockd]
+[6G75 be/0 root[30;26H0.00 B/s    0.00 B/s  ?unavailable?  [blkcg_punt_bio]
+[6G76 be/0 root[31;26H0.00 B/s    0.00 B/s  ?unavailable?  [tpm_dev_wq]
+[6G77 be/0 root[32;26H0.00 B/s    0.00 B/s  ?unavailable?  [ata_sff]
+[6G78 be/0 root[33;26H0.00 B/s    0.00 B/s  ?unavailable?  [md]
+[6G79 be/0 root[34;26H0.00 B/s    0.00 B/s  ?unavailable?  [edac-poller]
+[6G80 be/0 root[35;26H0.00 B/s    0.00 B/s  ?unavailable?  [devfreq_wq]
+[6G81 rt/4 root[36;26H0.00 B/s    0.00 B/s  ?unavailable?  [watchdogd]
+[6G84 be/4 root[37;26H0.00 B/s    0.00 B/s  ?unavailable?  [kswapd0]
+[6G85 be/4 root[38;26H0.00 B/s    0.00 B/s  ?unavailable?  [ecryptfs-kthrea]
+[6G87 be/0 root[39;26H0.00 B/s    0.00 B/s  ?unavailable?  [kthrotld]
+[6G88 be/0 root[40;26H0.00 B/s    0.00 B/s  ?unavailable?  [acpi_thermal_pm]
+[6G90 be/4 root[41;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_eh_0]
+[6G91 be/0 root[42;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_0]
+[6G92 be/4 root[43;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_eh_1]
+[6G93 be/0 root[44;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_1]
+[6G95 be/0 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [vfio-irqfd-clea]
+[6G97 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [mld]
+
+(B[0;7m  keys:  any: refresh  (B[0;4;7mq(B[0;7m: quit  (B[0;4;7mi(B[0;7m: ionice  (B[0;4;7mo(B[0;7m: active  (B[0;4;7mp(B[0;7m: procs  (B[0;4;7ma(B[0;7m: accum                                                                                                                                   [48;1H  sort:  (B[0;4;7mr(B[0;7m: asc  (B[0;4;7mleft(B[0;7m: SWAPIN  (B[0;4;7mright(B[0;7m: COMMAND  (B[0;4;7mhome(B[0;7m: TID  (B[0;4;7mend(B[0;7m: COMMAND                                                                                                                                     [49;1H(B[0;1mCONFIG_TASK_DELAY_ACCT not enabled in kernel, cannot determine SWAPIN and IO %
+(B[m[4;46r[4;1H[5T[1;49r[1;62H91.12 M[2;61H 71.8
+
+
+   1991 be/4 kupuk[26G0.00 B/s    2.02 K/s  ?unavailable?  gvfsd-metadata
+
+   2112 idle kupuk[26G0.00 B/s    2.02 K/s  ?unavailable?  tracker-store [pool-tracker-st]
+
+   7416 be/4 kupuk[26G0.00 B/s   45.56 M/s  ?unavailable?  ./349456
+
+   7422 be/4 kupuk[26G0.00 B/s   45.56 M/s  ?unavailable?  ./349456
+
+   8948 be/4 root[8;26H0.00 B/s    2.02 K/s  ?unavailable?  python3 /usr/sbin/iotop -n 60 -d 1
+[49d[6;46r[46;1H[3S[1;49r[1;61H124.49
+[61G143.84
+
+
+   7414[4;37H62.24 M[4;63H./349456[K
+
+   7419 be/4[5;37H62.24 M[5;63H./349456[K[44;6H91 be/0 root[44;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_0]
+[6G92 be/4 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_eh_1]
+[6G93 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_1]
+
+
+
+[5;46r[46;1H
+[1;49r[1;61H 82.06 K[2;61H  8.48
+
+
+    184 be/3 root [4;37H82.06 K[4;63H[jbd2/sda5-8][46;6H95 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [vfio-irqfd-clea]
+
+
+
+[5;46r[5;1H[2T[1;49r[1;61H101.86 M[2;62H53.64
+
+[5G225[4;37H 2.38[4;63Hsystemd-journald
+
+   7417 be/4 kupuk[26G0.00 B/s   48.22 M/s  ?unavailable?  ./349456
+
+   7421 be/4 kupuk[26G0.00 B/s   53.64 M/s  ?unavailable?  ./349456
+[49d[5;46r[5;1H[2T[1;49r[1;61H 79.65
+8.93[4;37H12.51
+
+   2112 idle kupuk[26G0.00 B/s    2.50 K/s  ?unavailable?  tracker-store [pool-tracker-st]
+
+   7415 be/4 kupuk[26G0.00 B/s   17.68 M/s  ?unavailable?  ./349456[7;37H 5.68
+[7G3[8;38H6.28[15;77Hevents_highpri]
+[49d[8;46r[46;1H
+[1;49r[1;62H95.03
+[61G150.08[4;37H27.55
+
+   7412 be/4[5;37H56.35 M[5;63H./349456[K[6;37H38.65
+
+   8961[7;38H7.51 K[7;63Hgedit --gapplication-service[14;77Hkblockd][K[46;6H91 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_0]
+
+
+
+[7;46r[46;1H
+[1;49r[1;62H58.79
+[61G 75.90
+
+[5G184[4;37H18.28[4;63H[jbd2/sda5-8][K
+
+   2112 idle[5;37H 2.61 K[5;63Htracker-store [pool-tracker-st]
+[7G3[6;37H58.77[46;6H92 be/4 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_eh_1]
+
+
+
+[4;12r[12;1H
+[1;49r[13;46r[46;1H
+[1;49r[1;62H6
+68.79[4;38H3.06
+[7G8[5;37H68.79[12;7H9 be/0 root[12;26H0.00 B/s    0.00 B/s  ?unavailable?  [kworker/0:1H-events_highpri][46;6H93 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_1]
+
+
+
+[4;46r[46;1H[2S[1;49r[1;62H 0.00 B[2;62H 0.00 B[45;6H95 be/0 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [vfio-irqfd-clea]
+[6G97 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [mld]
+
+
+
+[2;62H85.35 K[10;77Hkblockd][K
+[49d[4;46r[4;1H[3T[1;49r[1;62H36.95 M[2;62H 0.00 B
+
+[5G184 be/3 root[4;26H0.00 B/s   16.51 K/s  ?unavailable?  [jbd2/sda5-8]
+
+   7414 be/4 kupuk[26G0.00 B/s   10.93 M/s  ?unavailable?  ./349456
+
+   7419 be/4 kupuk[26G0.00 B/s   26.00 M/s  ?unavailable?  ./349456[13;77Hevents_highpri]
+[49d[6;46r[46;1H
+[1;49r[1;62H85.81
+[62G12.56 M
+
+
+   7414 be/4 kupuk[4;37H44.83 M[4;63H./349456[K
+[7G9[5;37H40.98[46;6H93 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_1]
+
+
+
+[1;62H30.97
+[61G110.43
+
+[7G2[4;37H19.5
+[7G4[5;37H11.45[12;77Hkblockd][K
+[49d[4;46r[4;1H[5T[1;49r[1;62H52.8
+[61G 24.41
+
+[5G184 be/3 root[4;26H0.00 B/s    7.83 K/s  ?unavailable?  [jbd2/sda5-8]
+[5G225 be/3 root[5;26H0.00 B/s   39.16 K/s  ?unavailable?  systemd-journald
+
+   2112 idle kupuk[26G0.00 B/s   44.38 K/s  ?unavailable?  tracker-store [pool-tracker-st]
+
+   7412 be/4 kupuk[26G0.00 B/s   22.19 M/s  ?unavailable?  ./349456
+
+   7417 be/4 kupuk[26G0.00 B/s    7.18 M/s  ?unavailable?  ./349456
+[6G20[9;37H 7.75
+[6G21[10;38H5.66
+[49d[8;16r[16;1H
+[1;49r[17;46r[46;1H
+[1;49r[1;61H122.23
+[62G33.37
+
+
+   7412 be/4 kupuk[4;37H16.98 M[4;63H./349456[K
+
+   7416 be/4 kupuk[5;37H17.61 M[5;63H./349456[K
+
+   7417 be/4[6;37H25.15 M[6;63H./349456[K
+[6G20[7;38H4.61
+[7G1[8;37H23.90
+[7G3[9;38H3.99[16;7H9 be/0 root[16;26H0.00 B/s    0.00 B/s  ?unavailable?  [kworker/0:1H-events_highpri][46;6H88 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [acpi_thermal_pm]
+
+
+
+[10;46r[10;1H[4T[1;49r[1;61H240.85
+[61G253.41
+
+
+   2112 idle[4;37H36.64 K[4;63Htracker-store [pool-tracker-st]
+[7G3[5;35H1443.14 K
+[7G5[6;37H63.42
+[6G16[7;37H43.69
+[6G17[8;38H7.48
+[7G0[9;37H27.48
+
+   7421 be/4 kupuk[26G0.00 B/s   19.73 M/s  ?unavailable?  ./349456
+
+   7422 be/4 kupuk[26G0.00 B/s    9.85 M/s  ?unavailable?  ./349456
+
+   7423 be/4 kupuk[26G0.00 B/s   47.75 M/s  ?unavailable?  ./349456
+
+   8948 be/4 root[13;26H0.00 B/s    2.82 K/s  ?unavailable?  python3 /usr/sbin/iotop -n 60 -d 1[20;77Hkblockd][K
+[49d[7;46r[46;1H[7S[1;49r[1;61H 82.76
+[61G159.87
+
+
+    184 be/3 root [4;37H22.19[4;63H[jbd2/sda5-8][K[5;35H  44.39 M
+[6G22[6;37H38.35[40;6H84 be/4 root[40;26H0.00 B/s    0.00 B/s  ?unavailable?  [kswapd0]
+[6G85 be/4 root[41;26H0.00 B/s    0.00 B/s  ?unavailable?  [ecryptfs-kthrea]
+[6G87 be/0 root[42;26H0.00 B/s    0.00 B/s  ?unavailable?  [kthrotld]
+[6G88 be/0 root[43;26H0.00 B/s    0.00 B/s  ?unavailable?  [acpi_thermal_pm]
+[6G90 be/4 root[44;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_eh_0]
+[6G91 be/0 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_0]
+[6G92 be/4 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_eh_1]
+
+
+
+[6;46r[46;1H
+[1;49r[1;62H57.81
+[61G 57.80
+
+
+   2112 idle kupuk[4;38H3.11[4;63Htracker-store [pool-tracker-st]
+[7G8[5;37H57.7[46;6H93 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_1]
+
+
+
+[4;46r[46;1H[2S[1;49r[1;62H 0.00 B[2;62H32.27[10;77Hevents_highpri][45;6H95 be/0 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [vfio-irqfd-clea]
+[6G97 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [mld]
+
+
+
+[2;61H490.72 K
+[49d[4;46r[4;1H[2T[1;49r[1;62H86.23 K[2;61H 92.6
+
+[5G184 be/3 root[4;26H0.00 B/s   83.04 K/s  ?unavailable?  [jbd2/sda5-8]
+
+   8948 be/4 root[5;26H0.00 B/s    3.19 K/s  ?unavailable?  python3 /usr/sbin/iotop -n 60 -d 1[12;77Hkblockd][K
+[49d[5;46r[5;1HM[1;49r[1;61H160.14 M[2;61H139.64 M
+
+
+   7414 be/4 kupuk[4;37H72.23 M[4;63H./349456[K
+
+   7419 be/4 kupuk[26G0.00 B/s   72.23 M/s  ?unavailable?  ./349456
+
+   7420[14Gkupuk[6;37H15.68 M[6;63H./349456[K
+[49d[4;46r[4;1H[2T[1;49r[1;62H85.09
+[62G23.08
+
+
+   2112 idle kupuk[26G0.00 B/s   69.56 K/s  ?unavailable?  tracker-store [pool-tracker-st]
+
+   7412 be/4 kupuk[26G0.00 B/s   48.91 M/s  ?unavailable?  ./349456
+[7G6[6;37H48.91
+[6G20[7;37H38.29
+[7G2[8;37H48.91
+[49d[4;46r[46;1H[5S[1;49r[1;61H  0.00 B[2;61H 96.63[42;6H91 be/0 root[42;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_0]
+[6G92 be/4 root[43;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_eh_1]
+[6G93 be/0 root[44;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_1]
+[6G95 be/0 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [vfio-irqfd-clea]
+[6G97 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [mld]
+
+
+
+[4;46r[4;1H[5T[1;49r[1;62H45.93 M[2;61H103.55 K
+
+[5G184 be/3 root[4;26H0.00 B/s   59.17 K/s  ?unavailable?  [jbd2/sda5-8]
+[5G225 be/3 root[5;26H0.00 B/s   96.15 K/s  ?unavailable?  systemd-journald
+[5G640 be/4 syslog[26G0.00 B/s    2.47 K/s  ?unavailable?  rsyslogd -n -iNONE [rs:main Q:Reg]
+
+   7417 be/4 kupuk[26G0.00 B/s    8.98 M/s  ?unavailable?  ./349456
+
+   7421 be/4 kupuk[26G0.00 B/s   36.80 M/s  ?unavailable?  ./349456[15;77Hevents_highpri]
+[49d[6;46r[46;1H
+[1;49r[1;61H117.62
+[61G 64.75 M
+
+
+   7415 be/4 kupuk[4;37H43.17 M[4;63H./349456[K
+
+   7417 be/4 kupuk[5;37H43.31 M[5;63H./349456[K
+[6G21[6;37H21.80
+[7G3[7;37H 9.35[14;77Hkblockd][K[46;6H91 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_0]
+
+
+
+[6;46r[6;1HM[1;49r[1;61H 85.30
+[61G116.46
+
+[7G3[4;37H10.58
+[7G5[5;37H19.4
+
+   7417 be/4 kupuk[26G0.00 B/s    9.86 M/s  ?unavailable?  ./349456
+[6G18[7;37H17.69
+[37G27.7
+[49d[4;46r[4;1H[2T[1;49r[1;62H76.22
+[61G  8.19
+
+[5G184 be/3 root[4;26H0.00 B/s   11.04 K/s  ?unavailable?  [jbd2/sda5-8]
+[5G225 be/3 root[5;26H0.00 B/s  140.76 K/s  ?unavailable?  systemd-journald
+
+    640[14Gsyslog[6;37H 2.76 K[6;63Hrsyslogd -n -iNONE [rs:main Q:Reg]
+
+   2112 idle[7;40H32 K[7;63Htracker-store [pool-tracker-st]
+[7G3[8;37H27.23
+[37G25.2
+3.53
+[49d[4;46r[46;1H[4S[1;49r[1;62H33.50
+[62G90.28[4;37H19.0
+14.47
+
+   8948[14Groot [6;37H 2.23 K[6;63Hpython3 /usr/sbin/iotop -n 60 -d 1[43;6H88 be/0 root[43;26H0.00 B/s    0.00 B/s  ?unavailable?  [acpi_thermal_pm]
+[6G90 be/4 root[44;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_eh_0]
+[6G91 be/0 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_0]
+[6G92 be/4 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_eh_1]
+
+
+
+[4;46r[46;1H[3S[1;49r[1;62H 0.00 B[2;62H55.84[10;77Hevents_highpri][44;6H93 be/0 root[44;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_1]
+[6G95 be/0 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [vfio-irqfd-clea]
+[6G97 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [mld]
+
+
+
+[4;46r[4;1H[2T[1;49r[1;62H65.81 M[2;62H65.81
+
+
+   2112 idle kupuk[26G0.00 B/s    2.92 K/s  ?unavailable?  tracker-store [pool-tracker-st]
+
+   7419 be/4 kupuk[26G0.00 B/s   65.81 M/s  ?unavailable?  ./349456[12;77Hkblockd][K
+[49d[1;62H73.16
+[62G73.23
+
+
+    184 be/3 root [4;37H19.51[4;63H[jbd2/sda5-8][K
+[6G20[5;37H73.14[12;77Hevents_highpri]
+[49d[6;46r[6;1HM[1;49r[1;26H3.33 K[1;63H4.89[2;26H3.33 K[2;62H12.87
+
+[5G225[4;38H6.64[4;63Hsystemd-journald
+[6G16[5;38H4.87
+
+   8961 be/4 kupuk[26G3.33 K/s    0.00 B/s  ?unavailable?  gedit --gapplication-service[13;77Hkblockd][K
+[49d[5;46r[46;1H[2S[1;49r[1;26H0.00 B[1;62H58.31[2;26H0.00 B[2;61H106.59
+
+
+   7414 be/4 kupuk[4;37H58.31 M[4;63H./349456[K[45;6H93 be/0 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_1]
+[6G95 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [vfio-irqfd-clea]
+
+
+
+[4;46r[4;1HM[1;49r[1;61H129.18
+[61G 86.30 K
+
+
+   7421 be/4 kupuk[26G0.00 B/s   63.07 M/s  ?unavailable?  ./349456
+[6G22[5;37H66.1
+[49d[4;46r[4;1H[5T[1;49r[1;62H77.77
+[61G178.23 M
+
+[5G184 be/3 root[4;26H0.00 B/s    5.28 K/s  ?unavailable?  [jbd2/sda5-8]
+[5G225 be/3 root[5;26H0.00 B/s    2.64 K/s  ?unavailable?  systemd-journald
+
+   7412 be/4 kupuk[26G0.00 B/s   59.41 M/s  ?unavailable?  ./349456
+
+   7417 be/4 kupuk[26G0.00 B/s   49.44 M/s  ?unavailable?  ./349456
+
+   7418 be/4 kupuk[26G0.00 B/s   52.86 M/s  ?unavailable?  ./349456[9;37H 9.24
+[37G 6.82[17;77Hevents_highpri]
+[49d[4;46r[46;1H[3S[1;49r[1;61H 71.55
+[62G67.94
+
+
+   2112 idle[4;37H 2.49 K[4;63Htracker-store [pool-tracker-st]
+[7G5[5;38H5.98
+[6G17[6;40H39
+[6G18[7;40H17[14;77Hkblockd][K[44;6H88 be/0 root[44;26H0.00 B/s    0.00 B/s  ?unavailable?  [acpi_thermal_pm]
+[6G90 be/4 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_eh_0]
+[6G91 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_0]
+
+
+
+[4;46r[46;1H[2S[1;49r[1;62H68.82
+[61G 44.33
+
+
+    225 be/3 root [4;37H36.69 K[4;63Hsystemd-journald
+[6G23[5;37H68.79[45;6H92 be/4 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_eh_1]
+[6G93 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_1]
+
+
+
+[5;46r[5;1HM[1;49r[1;62H54.70
+[62G74.22
+
+[5G184[4;37H29.16[4;63H[jbd2/sda5-8][K
+
+   2112 idle kupuk[26G0.00 B/s    2.43 K/s  ?unavailable?  tracker-store [pool-tracker-st]
+[6G1[6;37H54.67
+[49d[4;46r[46;1H[3S[1;49r[1;62H 0.00 B[2;62H 0.00 B[10;77Hevents_highpri][44;6H93 be/0 root[44;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_1]
+[6G95 be/0 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [vfio-irqfd-clea]
+[6G97 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [mld]
+
+
+
+[4;46r[4;1H[2T[1;49r[1;61H126.46 M
+
+
+
+   7419 be/4 kupuk[26G0.00 B/s   68.76 M/s  ?unavailable?  ./349456
+
+   7420 be/4 kupuk[26G0.00 B/s   57.70 M/s  ?unavailable?  ./349456
+[49d[4;46r[4;1H[3T[1;49r[1;61H 20.00
+[61G113.54 M
+
+[5G184 be/3 root[4;26H0.00 B/s   20.17 K/s  ?unavailable?  [jbd2/sda5-8]
+
+   1991 be/4 kupuk[26G0.00 B/s   25.21 K/s  ?unavailable?  gvfsd-metadata
+
+   7416 be/4 kupuk[26G0.00 B/s    7.35 M/s  ?unavailable?  ./349456[7;35H1936.10 K[8;37H10.71[15;77Hkblockd][K
+[49d[7;14r[14;1H
+[1;49r[15;46r[46;1H
+[1;49r[1;62H34.28
+[61G 43.24 K[4;37H 4.55
+
+   7416[5;37H34.27 M[5;63H./349456[K
+
+   8948[14Groot [6;38H2.28 K[6;63Hpython3 /usr/sbin/iotop -n 60 -d 1
+
+   8961[7;37H 6.83 K[7;63Hgedit --gapplication-service[14;7H9 be/0 root[14;26H0.00 B/s    0.00 B/s  ?unavailable?  [kworker/0:1H-events_highpri][46;6H91 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_0]
+
+
+
+[6;46r[46;1H[2S[1;49r[1;62H27.82
+[62G56.15 M
+
+
+   7416 be/4 kupuk[4;37H11.24 M[4;63H./349456[K
+[6G22[5;37H16.59[12;77Hkblockd][K[45;6H92 be/4 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_eh_1]
+[6G93 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_1]
+
+
+
+[6;46r[6;1H[3T[1;49r[1;62H80.08
+7.02
+
+
+    225 be/3 root [4;37H 2.53 K[4;63Hsystemd-journald
+
+   2112 idle[5;37H78.56 K[5;63Htracker-store [pool-tracker-st]
+
+   7421 be/4 kupuk[26G0.00 B/s   39.92 M/s  ?unavailable?  ./349456
+
+   7422 be/4 kupuk[26G0.00 B/s   40.08 M/s  ?unavailable?  ./349456
+
+   8948 be/4 root[8;26H0.00 B/s    2.53 K/s  ?unavailable?  python3 /usr/sbin/iotop -n 60 -d 1
+[49d[1;62H71.54
+[62G65.07
+
+[5G184[4;37H80.84[4;63H[jbd2/sda5-8][K[5;37H 2.89
+[6G15[6;37H16.60
+[6G17[7;37H35.37
+
+   7421[14Gkupuk[8;37H19.49 M[8;63H./349456[K[15;77Hevents_highpri]
+[49d[8;46r[46;1H
+[1;49r[1;61H197.96
+[61G166.88
+
+
+   7412 be/4 kupuk[4;37H41.24 M[4;63H./349456[K
+
+   7414 be/4[5;37H71.23 M[5;63H./349456[K[6;37H53.03
+2.45[14;77Hkblockd][K[46;6H91 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_0]
+
+
+
+[6;46r[46;1H
+[1;49r[1;62H49.51
+[62G75.37[4;37H26.00
+[7G3[5;37H61.75
+[6G23[6;37H61.7[46;6H92 be/4 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_eh_1]
+
+
+
+[4;46r[4;1HM[1;49r[1;61H 59.10
+[62G07.32
+
+[5G225 be/3 root[4;26H0.00 B/s  188.47 K/s  ?unavailable?  systemd-journald
+
+    640[14Gsyslog[5;37H 2.62 K[5;63Hrsyslogd -n -iNONE [rs:main Q:Reg]
+
+   2112 idle[6;37H20.94 K[6;63Htracker-store [pool-tracker-st]
+[6G18[7;37H58.90[14;77Hevents_highpri]
+[49d[5;46r[46;1H[3S[1;49r[1;61H111.46 K[2;62H80.30 K
+
+[5G184[4;37H11.46[4;63H[jbd2/sda5-8][K[44;6H92 be/4 root[44;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_eh_1]
+[6G93 be/0 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_1]
+[6G95 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [vfio-irqfd-clea]
+
+
+
+[1;61H 58.43 M[2;61H 58.43 M
+
+
+   7419 be/4 kupuk[4;36H 58.43 M[4;63H./349456[K
+[49d[1;62H71.61
+[62G71.61
+
+[6G20[4;37H71.61[11;77Hkblockd][K
+[49d[4;46r[4;1H[3T[1;49r[1;61H132.79
+[61G132.88
+
+[5G184 be/3 root[4;26H0.00 B/s   11.80 K/s  ?unavailable?  [jbd2/sda5-8]
+
+   2112 idle kupuk[26G0.00 B/s    2.95 K/s  ?unavailable?  tracker-store [pool-tracker-st]
+
+   7414 be/4 kupuk[26G0.00 B/s   66.39 M/s  ?unavailable?  ./349456
+[6G16[7;37H66.39
+[49d[4;46r[46;1H[2S[1;49r[1;63H4.16
+4.16
+
+[7G2[4;38H7.08
+[6G22[5;38H7.08[45;6H92 be/4 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_eh_1]
+[6G93 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_1]
+
+
+
+[4;46r[46;1H[2S[1;49r[1;61H  0.00 B[2;61H  0.00 B[10;77Hevents_highpri][45;6H95 be/0 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [vfio-irqfd-clea]
+[6G97 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [mld]
+
+
+
+[4;46r[4;1HM[1;49r[1;62H78.97 M[2;62H78.97 M
+
+
+   7421 be/4 kupuk[26G0.00 B/s   78.97 M/s  ?unavailable?  ./349456
+[49d[4;46r[4;1H[5T[1;49r[1;61H139.5
+22.23
+
+[5G184 be/3 root[4;26H0.00 B/s    2.86 K/s  ?unavailable?  [jbd2/sda5-8]
+[5G225 be/3 root[5;26H0.00 B/s   17.13 K/s  ?unavailable?  systemd-journald
+
+   2112 idle kupuk[26G0.00 B/s    2.86 K/s  ?unavailable?  tracker-store [pool-tracker-st]
+
+   7415 be/4 kupuk[26G0.00 B/s   29.94 M/s  ?unavailable?  ./349456
+
+   7417 be/4 kupuk[26G0.00 B/s   45.37 M/s  ?unavailable?  ./349456
+[6G18[9;37H64.24[16;77Hkblockd][K
+[49d[5;46r[46;1H[2S[1;49r[1;61H 72.03
+[61G171.7
+
+
+   7415 be/4 kupuk[4;37H34.53 M[4;63H./349456[K
+[7G7[5;37H19.00
+[6G23[6;37H18.49
+
+   894[14Groot [7;37H 2.87 K[7;63Hpython3 /usr/sbin/iotop -n 60 -d 1[45;6H90 be/4 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_eh_0]
+[6G91 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_0]
+
+
+
+[6;46r[46;1H[2S[1;49r[1;61H104.81
+[61G 64.9
+
+[7G3[4;37H58.45
+[6G23[5;37H46.37[45;6H92 be/4 root[45;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_eh_1]
+[6G93 be/0 root[46;26H0.00 B/s    0.00 B/s  ?unavailable?  [scsi_tmf_1]
+
+
+
+[?1l>[49;1H[?12l[?25h[?1049l[23;0;0t
+[?1l>
