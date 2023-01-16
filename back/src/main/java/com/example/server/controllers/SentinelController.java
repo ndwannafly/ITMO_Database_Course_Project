@@ -1,6 +1,5 @@
 package com.example.server.controllers;
 
-import com.example.server.POJO.PirateRequest;
 import com.example.server.POJO.SentinelRequest;
 import com.example.server.POJO.SentinelResponce;
 import com.example.server.entities.PeopleEntity;

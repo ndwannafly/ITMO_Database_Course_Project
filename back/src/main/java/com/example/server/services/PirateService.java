@@ -17,7 +17,7 @@ public class PirateService {
     private PirateRepository pirateRepository;
 
     @Autowired
-     private PeopleService peopleService;
+    private PeopleService peopleService;
 
     @Autowired
     private PirateTeamService pirateTeamService;
