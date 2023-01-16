@@ -19,8 +19,8 @@ public class TeamEntity {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "ship_id")
-    private Integer shipName;
+    @Column(name = "ship")
+    private String shipName;
 
     @Column(name = "value")
     private Integer value;
@@ -28,7 +28,7 @@ public class TeamEntity {
     @Column(name = "img")
     private String img;
 
-    public TeamEntity(Long id, String name, Integer shipName, Integer value, String img) {
+    public TeamEntity(Long id, String name, String shipName, Integer value, String img) {
         this.id = id;
         this.name = name;
         this.shipName = shipName;

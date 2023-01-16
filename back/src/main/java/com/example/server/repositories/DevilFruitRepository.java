@@ -16,4 +16,5 @@ public interface DevilFruitRepository extends JpaRepository<DevilFruitsEntity, L
             "WHERE person_id is null;", nativeQuery = true)
     List<DevilFruitsEntity> getAllDevilFruits();
 
+
 }
