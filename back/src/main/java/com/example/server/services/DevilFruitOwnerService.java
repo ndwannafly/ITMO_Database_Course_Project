@@ -1,7 +1,6 @@
 package com.example.server.services;
 
 import com.example.server.entities.DevilFruitsOwnerEntity;
-import com.example.server.entities.PirateTeamEntity;
 import com.example.server.repositories.DevilFruitOwnerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,4 +23,5 @@ public class DevilFruitOwnerService {
 
         return devilFruitOwnerRepository.save(devilFruitsOwnerEntity);
     }
+
 }

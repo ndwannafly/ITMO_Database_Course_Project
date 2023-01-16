@@ -1,6 +1,5 @@
 package com.example.server.services;
 
-import com.example.server.entities.WeaponOwnerEntity;
 import com.example.server.entities.WillOwnerEntity;
 import com.example.server.repositories.WillOwnerRepository;
 import org.springframework.beans.factory.annotation.Autowired;

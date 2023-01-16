@@ -4,7 +4,7 @@ import com.example.server.entities.WeaponEntity;
 import com.example.server.repositories.WeaponRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import java.util.List;
 @Service
 public class WeaponService {
     @Autowired
@@ -12,5 +12,10 @@ public class WeaponService {
 
     public WeaponEntity getWeaponEntutyById(Long Id){
         return weaponRepository.getWeaponEntityById(Id);
+    }
+
+
+    public List<WeaponEntity> getAllWeapons(){
+        return weaponRepository.getAllWeapon();
     }
 }

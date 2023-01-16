@@ -5,6 +5,7 @@ import com.example.server.entities.WillEntity;
 import com.example.server.repositories.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import java.util.List;
 
 @Service
 public class TeamService {
@@ -13,5 +14,9 @@ public class TeamService {
 
     public TeamEntity getTeamEntityById(Long id){
         return teamRepository.getTeamEntityById(id);
+    }
+
+    public List<TeamEntity> getAllTeams(){
+        return  teamRepository.getAllTeams();
     }
 }

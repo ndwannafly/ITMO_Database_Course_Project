@@ -17,7 +17,7 @@ public class PirateService {
     private PirateRepository pirateRepository;
 
     @Autowired
-    private PeopleService peopleService;
+     private PeopleService peopleService;
 
     @Autowired
     private PirateTeamService pirateTeamService;
@@ -70,6 +70,7 @@ public class PirateService {
 
         PirateTeamEntity pirateTeamEntity = new PirateTeamEntity();
         pirateTeamEntity.setPirateId(nextPirateID);
+        System.out.println("TeamId = "+request.getTeamID());
         pirateTeamEntity.setTeamId(Long.valueOf(request.getTeamID()));
         pirateTeamEntity.setTitle(request.getTeamTitle());
         pirateTeamService.addPirate(pirateTeamEntity);
