@@ -1,5 +1,8 @@
 package com.example.server.services;
 
+import com.example.server.POJO.DevilFruitRequest;
+import com.example.server.POJO.WeaponRequest;
+import com.example.server.entities.DevilFruitsEntity;
 import com.example.server.entities.WeaponEntity;
 import com.example.server.repositories.WeaponRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,5 +20,12 @@ public class WeaponService {
 
     public List<WeaponEntity> getAllWeapons(){
         return weaponRepository.getAllWeapon();
+    }
+
+    public WeaponEntity addWeapon(WeaponRequest weapon) {
+        WeaponEntity weaponEntity = new WeaponEntity();
+        weaponEntity.setDescription(weapon.getWeaponDesc());
+        weaponEntity.setName(weapon.getWeaponName());
+        return weaponRepository.save(weaponEntity);
     }
 }
