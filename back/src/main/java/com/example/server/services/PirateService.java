@@ -70,7 +70,6 @@ public class PirateService {
 
         PirateTeamEntity pirateTeamEntity = new PirateTeamEntity();
         pirateTeamEntity.setPirateId(nextPirateID);
-        System.out.println("TeamId = "+request.getTeamID());
         pirateTeamEntity.setTeamId(Long.valueOf(request.getTeamID()));
         pirateTeamEntity.setTitle(request.getTeamTitle());
         pirateTeamService.addPirate(pirateTeamEntity);

@@ -1,14 +1,14 @@
 package com.example.server.controllers;
 
+import com.example.server.POJO.PirateRequest;
+import com.example.server.POJO.SentinelRequest;
 import com.example.server.POJO.SentinelResponce;
 import com.example.server.entities.PeopleEntity;
 import com.example.server.entities.SentinelEntity;
 import com.example.server.services.PeopleService;
 import com.example.server.services.SentinelService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
 
 import java.util.ArrayList;
@@ -36,5 +36,10 @@ public class SentinelController {
 
         });
         return ResponseEntity.ok(sentinelResponces);
+    }
+
+    @PostMapping("/sentinel/add")
+    public ResponseEntity<?> addSentinel(@RequestBody SentinelRequest request) {
+        return ResponseEntity.ok(sentinelService.addSentinel(request));
     }
 }

@@ -5,7 +5,6 @@ import com.example.server.POJO.PirateRequest;
 import com.example.server.POJO.WillsForPeopleResponse;
 import com.example.server.entities.*;
 import com.example.server.services.*;
-import javafx.print.Collation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

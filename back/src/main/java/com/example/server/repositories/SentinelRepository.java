@@ -1,5 +1,6 @@
 package com.example.server.repositories;
 
+import com.example.server.entities.PirateEntity;
 import com.example.server.entities.SentinelEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -9,4 +10,7 @@ import java.util.List;
 public interface SentinelRepository extends JpaRepository<SentinelEntity, Long> {
     @Query(value = "SELECT * FROM sentinel", nativeQuery = true)
     List<SentinelEntity> getAll();
+
+    SentinelEntity findTopByOrderByIdDesc();
+
 }
