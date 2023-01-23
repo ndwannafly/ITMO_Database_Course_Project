@@ -1,11 +1,11 @@
 package com.example.server.services;
 
 import java.time.LocalDate;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
+import com.example.server.POJO.PiratePeopleResponse;
 import com.example.server.POJO.PirateRequest;
+import com.example.server.POJO.WillsForPeopleResponse;
 import com.example.server.entities.*;
 import com.example.server.repositories.PirateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +30,18 @@ public class PirateService {
 
     @Autowired
     private WillOwnerService willOwnerService;
+
+    @Autowired
+    private DevilFruitService devilFruitService;
+
+    @Autowired
+    private TeamService teamService;
+
+    @Autowired
+    private WillService willService;
+
+    @Autowired
+    private WeaponService weaponService;
 
     public Map<Long, String> getPirateByID(Long id) {
         Map<Long, String> result = new HashMap<>();
@@ -107,4 +119,66 @@ public class PirateService {
         return true;
     }
 
+    public List<PirateEntity> getPirateCanDif(Integer sum){
+        return pirateRepository.getPirateCanDif(sum);
+    }
+
+    public List<PiratePeopleResponse> getPirateResponse(List<PirateEntity> pirateEntities){
+        List<PiratePeopleResponse> piratePeopleResponses = new ArrayList<>();
+
+        pirateEntities.forEach(pirate -> {
+            PeopleEntity peopleEntity = peopleService.getPeoplesById(pirate.getPersonId());
+
+            DevilFruitsOwnerEntity devilFruitsOwnerEntity = devilFruitOwnerService.getDevilFruitsOwnerByPersonID(pirate.getPersonId());
+            DevilFruitsEntity devilFruitsEntity = devilFruitService.getDevilFruitById(devilFruitsOwnerEntity.getFruitId());
+
+            WeaponOwnerEntity weaponOwnerEntity = weaponOwnerService.getWeaponOwnerEntityByPersonId(pirate.getPersonId());
+            WeaponEntity weaponEntity = weaponService.getWeaponEntutyById(weaponOwnerEntity.getWeaponId());
+
+            List<WillOwnerEntity> willOwnerEntityList = willOwnerService.getWillOwnerEntitiesByPersonId(pirate.getPersonId());
+            WillsForPeopleResponse willsForPeopleResponse = willService.getWillsForPeople(willOwnerEntityList);
+
+            PirateTeamEntity pirateTeamEntity = pirateTeamService.getPirateTeamEntityByPirateId(pirate.getId());
+            TeamEntity teamEntity = teamService.getTeamEntityById(pirateTeamEntity.getTeamId());
+
+
+            PiratePeopleResponse piratePeopleResponse1 = new PiratePeopleResponse();
+
+            piratePeopleResponse1.setId(peopleEntity.getId());
+            piratePeopleResponse1.setPersonId(pirate.getPersonId());
+            piratePeopleResponse1.setCaptureReward(pirate.getCaptureReward());
+            piratePeopleResponse1.setDate(peopleEntity.getDate());
+            piratePeopleResponse1.setName(peopleEntity.getName());
+            piratePeopleResponse1.setHeight(peopleEntity.getHeight());
+
+            piratePeopleResponse1.setDevilFruitsName(devilFruitsEntity.getName());
+            piratePeopleResponse1.setDevilFruitsOwner(devilFruitsOwnerEntity.getOwnerLevel());
+            piratePeopleResponse1.setDevilFruitId(devilFruitsEntity.getId());
+
+            piratePeopleResponse1.setWeaponName(weaponEntity.getName());
+            piratePeopleResponse1.setWeaponOwner(weaponOwnerEntity.getOwnerLavel());
+            piratePeopleResponse1.setWeaponId(weaponEntity.getId());
+
+            piratePeopleResponse1.setWillArmament(willsForPeopleResponse.getWillArmament());
+            piratePeopleResponse1.setWillObservation(willsForPeopleResponse.getWillObservation());
+            piratePeopleResponse1.setWillRoyal(willsForPeopleResponse.getWillRoyal());
+
+
+            piratePeopleResponse1.setNumberTeam(teamEntity.getId());
+            piratePeopleResponse1.setNameTeam(teamEntity.getName());
+            piratePeopleResponse1.setImg(teamEntity.getImg());
+            piratePeopleResponse1.setTitle(pirateTeamEntity.getTitle());
+            piratePeopleResponses.add(piratePeopleResponse1);
+        });
+
+        Collections.sort(piratePeopleResponses, new Comparator<PiratePeopleResponse>() {
+            @Override
+            public int compare(PiratePeopleResponse o1, PiratePeopleResponse o2) {
+                return o2.getCaptureReward() - o1.getCaptureReward();
+            }
+        });
+
+        return piratePeopleResponses;
+
+    }
 }

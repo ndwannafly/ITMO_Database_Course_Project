@@ -20,4 +20,8 @@ public class WeaponOwnerService {
 
         return weaponOwnerRepository.save(weaponOwnerEntity);
     }
+
+    public int updateWeaponOwner(Integer owner, Long personId, Long weaponId){
+        return weaponOwnerRepository.updateOwnerLevel(owner, personId, weaponId);
+    }
 }

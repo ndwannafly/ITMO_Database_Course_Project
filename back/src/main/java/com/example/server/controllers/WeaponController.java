@@ -1,7 +1,6 @@
 package com.example.server.controllers;
 
 
-import com.example.server.POJO.DevilFruitRequest;
 import com.example.server.POJO.WeaponRequest;
 import com.example.server.services.WeaponService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +19,7 @@ public class WeaponController {
     public ResponseEntity<?> getWeapon() {
         return ResponseEntity.ok(weaponService.getAllWeapons());
     }
+
 
 
     @PostMapping("/weapon/add")

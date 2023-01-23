@@ -52,58 +52,10 @@ public class PirateController {
     @GetMapping("/pirate")
     public ResponseEntity<?> getPirates() {
         List<PirateEntity> pirateEntities = pirateService.getPirate();
-        List<PiratePeopleResponse> piratePeopleResponses = new ArrayList<>();
+        List<PiratePeopleResponse> piratePeopleResponses = pirateService.getPirateResponse(pirateEntities);
         ;
 
-        pirateEntities.forEach(pirate -> {
-            PeopleEntity peopleEntity = peopleService.getPeoplesById(pirate.getPersonId());
 
-            DevilFruitsOwnerEntity devilFruitsOwnerEntity = devilFruitOwnerService.getDevilFruitsOwnerByPersonID(pirate.getPersonId());
-            DevilFruitsEntity devilFruitsEntity = devilFruitService.getDevilFruitById(devilFruitsOwnerEntity.getFruitId());
-
-            WeaponOwnerEntity weaponOwnerEntity = weaponOwnerService.getWeaponOwnerEntityByPersonId(pirate.getPersonId());
-            WeaponEntity weaponEntity = weaponService.getWeaponEntutyById(weaponOwnerEntity.getWeaponId());
-
-            List<WillOwnerEntity> willOwnerEntityList = willOwnerService.getWillOwnerEntitiesByPersonId(pirate.getPersonId());
-            WillsForPeopleResponse willsForPeopleResponse = willService.getWillsForPeople(willOwnerEntityList);
-
-            PirateTeamEntity pirateTeamEntity = pirateTeamService.getPirateTeamEntityByPirateId(pirate.getId());
-            TeamEntity teamEntity = teamService.getTeamEntityById(pirateTeamEntity.getTeamId());
-
-
-            PiratePeopleResponse piratePeopleResponse1 = new PiratePeopleResponse();
-
-            piratePeopleResponse1.setId(pirate.getId());
-            piratePeopleResponse1.setPersonId(pirate.getPersonId());
-            piratePeopleResponse1.setCaptureReward(pirate.getCaptureReward());
-            piratePeopleResponse1.setDate(peopleEntity.getDate());
-            piratePeopleResponse1.setName(peopleEntity.getName());
-            piratePeopleResponse1.setHeight(peopleEntity.getHeight());
-
-            piratePeopleResponse1.setDevilFruitsName(devilFruitsEntity.getName());
-            piratePeopleResponse1.setDevilFruitsOwner(devilFruitsOwnerEntity.getOwnerLevel());
-
-            piratePeopleResponse1.setWeaponName(weaponEntity.getName());
-            piratePeopleResponse1.setWeaponOwner(weaponOwnerEntity.getOwnerLavel());
-
-            piratePeopleResponse1.setWillArmament(willsForPeopleResponse.getWillArmament());
-            piratePeopleResponse1.setWillObservation(willsForPeopleResponse.getWillObservation());
-            piratePeopleResponse1.setWillRoyal(willsForPeopleResponse.getWillRoyal());
-
-
-            piratePeopleResponse1.setNumberTeam(teamEntity.getId());
-            piratePeopleResponse1.setNameTeam(teamEntity.getName());
-            piratePeopleResponse1.setImg(teamEntity.getImg());
-            piratePeopleResponse1.setTitle(pirateTeamEntity.getTitle());
-            piratePeopleResponses.add(piratePeopleResponse1);
-        });
-
-        Collections.sort(piratePeopleResponses, new Comparator<PiratePeopleResponse>() {
-            @Override
-            public int compare(PiratePeopleResponse o1, PiratePeopleResponse o2) {
-                return o2.getCaptureReward() - o1.getCaptureReward();
-            }
-        });
 
         return ResponseEntity.ok(piratePeopleResponses);
     }
@@ -120,5 +72,28 @@ public class PirateController {
     @PostMapping("/pirate/add")
     public ResponseEntity<?> addPirate(@RequestBody PirateRequest request) {
         return ResponseEntity.ok(pirateService.addPirate(request));
+    }
+
+    @GetMapping("/pirateSentinel/{id}")
+    public ResponseEntity<?> getPirateSentinel(@PathVariable String id){
+        Long sentinelId = Long.parseLong(id);
+        Integer sum = 0;
+        DevilFruitsOwnerEntity devilFruitsOwnerEntity = devilFruitOwnerService.getDevilFruitsOwnerByPersonID(sentinelId);
+        sum = sum + devilFruitsOwnerEntity.getOwnerLevel();
+
+        WeaponOwnerEntity weaponOwnerEntity = weaponOwnerService.getWeaponOwnerEntityByPersonId(sentinelId);
+        sum = sum + weaponOwnerEntity.getOwnerLavel();
+
+        List<WillOwnerEntity> willOwnerEntityList = willOwnerService.getWillOwnerEntitiesByPersonId(sentinelId);
+
+
+        for (WillOwnerEntity willOwnerEntity : willOwnerEntityList){
+            sum = sum + willOwnerEntity.getOwnerLevel();
+        }
+
+
+        List<PirateEntity> pirateEntities = pirateService.getPirateCanDif(sum);
+        List<PiratePeopleResponse> piratePeopleResponses = pirateService.getPirateResponse(pirateEntities);
+        return ResponseEntity.ok(piratePeopleResponses);
     }
 }

@@ -19,4 +19,8 @@ public class WillOwnerService {
         return willOwnerRepository.save(willOwnerEntity);
     }
 
+    public int updateWillOwner(Integer owner, Long personId, Long willId){
+        return willOwnerRepository.updateOwnerLevel(owner, personId, willId);
+    }
+
 }

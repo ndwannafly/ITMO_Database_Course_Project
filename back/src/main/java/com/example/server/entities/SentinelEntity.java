@@ -19,12 +19,12 @@ public class SentinelEntity {
     private Long personId;
 
     @Column(name = "ranking_id")
-    private  Integer rankingId;
+    private  Long rankingId;
 
     @Column(name = "base_id")
-    private Integer baseId;
+    private Long baseId;
 
-    public SentinelEntity(Long id, Long personId, Integer rankingId, Integer baseId) {
+    public SentinelEntity(Long id, Long personId, Long rankingId, Long baseId) {
         this.id = id;
         this.personId = personId;
         this.rankingId = rankingId;

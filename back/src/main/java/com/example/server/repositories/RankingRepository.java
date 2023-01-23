@@ -9,4 +9,6 @@ import java.util.List;
 public interface RankingRepository extends JpaRepository<RankingEntity, Long> {
     @Query(value = "SELECT * FROM ranking", nativeQuery = true)
     List<RankingEntity> getAllRanking();
+
+    RankingEntity getRankingEntityById(Long id);
 }

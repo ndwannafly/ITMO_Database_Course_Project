@@ -15,10 +15,11 @@ public class PiratePeopleResponse {
     private Integer age;
     private Integer height;
 
-
+    private Long devilFruitId;
     private String devilFruitsName;
     private Integer devilFruitsOwner;
 
+    private Long weaponId;
     private String weaponName;
     private Integer weaponOwner;
 
@@ -30,6 +31,22 @@ public class PiratePeopleResponse {
     private String nameTeam;
     private String img;
     private String title;
+
+    public Long getWeaponId() {
+        return weaponId;
+    }
+
+    public void setWeaponId(Long weaponId) {
+        this.weaponId = weaponId;
+    }
+
+    public Long getDevilFruitId() {
+        return devilFruitId;
+    }
+
+    public void setDevilFruitId(Long devilFruitId) {
+        this.devilFruitId = devilFruitId;
+    }
 
     public void setTitle(String title) {
         this.title = title;

@@ -13,4 +13,8 @@ public class RankingService {
     public List<RankingEntity> getAllRankings(){
         return rankingRepository.getAllRanking();
     }
+
+    public RankingEntity getRankingEntityById(Long id){
+        return rankingRepository.getRankingEntityById(id);
+    }
 }

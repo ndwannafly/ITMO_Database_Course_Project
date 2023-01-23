@@ -7,9 +7,9 @@ public class SentinelRequest {
 
     private String birthDate;
 
-    private Integer rankingId;
+    private Long rankingId;
 
-    private Integer baseId;
+    private Long baseId;
 
     private Integer fruitId;
 
@@ -65,7 +65,7 @@ public class SentinelRequest {
         return height;
     }
 
-    public Integer getBaseId() {
+    public Long getBaseId() {
         return baseId;
     }
 
@@ -97,11 +97,11 @@ public class SentinelRequest {
         return fruitId;
     }
 
-    public Integer getRankingId() {
+    public Long getRankingId() {
         return rankingId;
     }
 
-    public void setBaseId(Integer baseId) {
+    public void setBaseId(Long baseId) {
         this.baseId = baseId;
     }
 
@@ -109,7 +109,7 @@ public class SentinelRequest {
         this.fruitId = fruitId;
     }
 
-    public void setRankingId(Integer rankingId) {
+    public void setRankingId(Long rankingId) {
         this.rankingId = rankingId;
     }
 

@@ -11,4 +11,6 @@ public interface BaseRepository extends JpaRepository<BaseEntity, Long> {
     @Query(value = "SELECT * FROM base", nativeQuery = true)
     List<BaseEntity> getAllBase();
 
+    BaseEntity getBaseEntityById(Long id);
+
 }

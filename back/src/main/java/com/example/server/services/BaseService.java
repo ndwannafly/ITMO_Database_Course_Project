@@ -16,4 +16,8 @@ public class BaseService {
     public List<BaseEntity> getAllBase(){
         return baseRepository.getAllBase();
     }
+
+    public BaseEntity getBaseEntityById(Long id){
+        return baseRepository.getBaseEntityById(id);
+    }
 }

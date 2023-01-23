@@ -24,4 +24,8 @@ public class DevilFruitOwnerService {
         return devilFruitOwnerRepository.save(devilFruitsOwnerEntity);
     }
 
+    public int updateDevilFruitOwner(Integer owner, Long personId, Long fruitId){
+       return devilFruitOwnerRepository.updateOwnerLevel(owner, personId, fruitId);
+    }
+
 }
